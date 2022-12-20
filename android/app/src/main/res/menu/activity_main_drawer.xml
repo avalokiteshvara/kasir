@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_barang"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="@string/menu_barang" />
+        <item
+            android:id="@+id/nav_keranjang"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="@string/menu_keranjang" />
+
+		<item
+            android:id="@+id/nav_hutang"
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:title="@string/menu_hutang" />
+
+		<item
+			android:id="@+id/nav_transaksi"
+			android:icon="@drawable/ic_baseline_history_24"
+			android:title="@string/transaksi" />
+
+		<item
+			android:id="@+id/nav_stok"
+			android:icon="@drawable/ic_baseline_multiple_stop_24"
+			android:title="@string/stok" />
+
+		<item
+			android:id="@+id/nav_catatan"
+			android:icon="@drawable/ic_baseline_event_note_24"
+			android:title="@string/menu_catatan" />
+    </group>
+</menu>

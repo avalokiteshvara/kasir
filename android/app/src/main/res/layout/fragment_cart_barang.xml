@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	card_view:cardCornerRadius="6dp"
+	card_view:cardElevation="3dp"
+	card_view:cardUseCompatPadding="true">
+
+	<ImageView
+		android:id="@+id/fcb_imgClose"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_gravity="right|top"
+		android:visibility="gone"
+		android:contentDescription="Close"
+		android:clickable="true"
+		android:src="@drawable/ic_baseline_close_24"
+		tools:ignore="RtlHardcoded" />
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/input_group"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="5dp"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:paddingTop="10dp">
+
+			<ImageView
+				android:id="@+id/fcb_foto"
+				android:layout_width="wrap_content"
+				android:layout_height="130dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				app:srcCompat="@drawable/placeholder"
+				android:contentDescription="TODO" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="0dp"
+				android:text="Warning label placeholder"
+				android:textAlignment="center"
+				android:textColor="@android:color/holo_red_light"
+				android:textSize="19sp"
+				android:visibility="gone"
+				android:textStyle="normal" />
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:paddingStart="10dp"
+				android:paddingTop="10dp"
+				android:paddingBottom="0dp"
+				tools:ignore="RtlSymmetry">
+
+				<TextView
+					android:id="@+id/fcb_tvNama"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:gravity="center_vertical"
+					android:hint="{Nama barang}"
+					android:ellipsize="none"
+					android:scrollHorizontally="false"
+					android:textAppearance="?attr/textAppearanceListItem"
+					android:textColor="@color/error_stroke_color"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:maxEms="15"				/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:paddingStart="10dp"
+				android:paddingTop="2dp"
+				android:paddingBottom="0dp">
+
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:paddingTop="5dp"
+					android:paddingBottom="5dp"
+					android:text="Satuan"
+					android:textColor="@android:color/black"
+					android:textSize="15sp"
+					android:textStyle="normal" />
+
+				<TextView
+					android:id="@+id/fcb_tvSatuan"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:gravity="center_vertical"
+					android:hint="{Satuan}"
+					android:textAppearance="?attr/textAppearanceListItem"
+					android:textSize="15sp"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingBottom="0dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:text="Harga"
+					android:paddingTop="5dp"
+					android:paddingBottom="5dp"
+					android:textColor="@android:color/black"
+					android:textSize="15sp"
+					android:textStyle="normal" />
+
+				<TextView
+					android:id="@+id/fcb_tvHarga"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:inputType="numberSigned"
+					android:hint="{Harga satuan}"
+					android:gravity="center_vertical"
+					android:textAppearance="?attr/textAppearanceListItem"
+					android:textSize="15sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:paddingStart="10dp"
+				android:paddingTop="2dp"
+				android:paddingBottom="0dp"
+				tools:ignore="RtlSymmetry">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:paddingTop="5dp"
+					android:paddingBottom="5dp"
+					android:text="Qty"
+					android:gravity="center_vertical"
+					android:textColor="@android:color/black"
+					android:textSize="15sp"
+					android:textStyle="normal" />
+
+				<EditText
+					android:id="@+id/fcb_etQty"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:hint="0"
+					android:textColor="@android:color/holo_red_light"
+					android:gravity="center_vertical"
+					android:inputType="numberSigned"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:paddingStart="10dp"
+				android:paddingTop="2dp"
+				android:paddingBottom="0dp"
+				tools:ignore="RtlSymmetry">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:text="Sub Total"
+					android:paddingTop="5dp"
+					android:paddingBottom="5dp"
+					android:textColor="@android:color/black"
+					android:textSize="15sp"
+					android:textStyle="normal" />
+
+				<TextView
+					android:id="@+id/fcb_tvSubTotal"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:textColor="@android:color/holo_red_light"
+					android:hint="{Harga total}"
+					android:text="Rp 0,-"
+					android:textAppearance="?attr/textAppearanceListItem"
+					android:gravity="center_vertical"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="2dip">
+
+				<Button
+					android:id="@+id/fcb_btnHapus"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginEnd="5sp"
+					android:layout_weight="2"
+					android:backgroundTint="@android:color/holo_red_light"
+					android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+					android:text="HAPUS"
+					android:textAlignment="center"
+					android:textColor="@android:color/black" />
+
+				<Button
+					android:id="@+id/fcb_btnUpdate"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginEnd="5sp"
+					android:layout_weight="2"
+					android:backgroundTint="@android:color/holo_green_dark"
+					android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+					android:text="UPDATE"
+					android:textAlignment="center"
+					android:textColor="@android:color/black" />
+			</LinearLayout>
+		</LinearLayout>
+
+
+	</ScrollView>
+</androidx.cardview.widget.CardView>
+
+
+

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/input_group"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="50dp"
+		android:layout_marginTop="5dp"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:paddingTop="10dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/white"
+			android:orientation="vertical">
+
+			<ImageView
+				android:id="@+id/fbf_imgViewFoto"
+				android:layout_width="match_parent"
+				android:layout_height="190dp"
+				android:layout_gravity="center"
+				android:contentDescription="TODO"
+				android:src="@drawable/placeholder" />
+
+			<ImageView
+				android:id="@+id/fbf_imgViewCamera"
+				android:layout_width="70dp"
+				android:layout_height="80dp"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="0dp"
+				android:contentDescription="TODO"
+				android:src="@drawable/ic_menu_camera"
+				tools:ignore="RtlHardcoded" />
+
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingStart="10dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="0dp">
+
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:text="Nama Barang"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal" />
+
+			<EditText
+				android:id="@+id/fbf_etNama"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:inputType="textCapCharacters"
+				android:hint="{Nama barang}"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="0dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:text="Barcode"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal" />
+
+			<EditText
+				android:id="@+id/fbf_etBarcode"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1.2"
+				android:hint="{Barcode}"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+			<Button
+				android:id="@+id/fbf_btnScan"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.8"
+				android:backgroundTint="@android:color/holo_blue_dark"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="SCAN"
+				android:textAlignment="center"
+				android:textColor="@android:color/white" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingStart="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="0dp">
+
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+
+				android:text="Satuan"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal" />
+
+			<Spinner
+				android:id="@+id/fbf_spinnerSatuan"
+				style="@android:style/Widget.Spinner.DropDown"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:spinnerMode="dropdown"
+				android:textSize="15sp"
+				android:textStyle="bold"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="0dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:text="Harga Beli"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal" />
+
+			<EditText
+				android:id="@+id/fbf_etHargaBeli"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:inputType="numberSigned"
+				android:hint="{Harga beli}"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="0dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:text="Harga Jual"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal" />
+
+			<EditText
+				android:id="@+id/fbf_etHargaJual"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:inputType="numberSigned"
+				android:hint="{Harga jual}"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="0dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:text="Qty Stok"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal" />
+
+			<EditText
+				android:id="@+id/fbf_etStok"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:inputType="numberSigned"
+				android:hint="{Qty Stok}"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingStart="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="10dp"
+			tools:ignore="RtlSymmetry">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:paddingTop="5dp"
+				android:text="Keterangan"
+				android:gravity="top"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal"  />
+
+			<EditText
+				android:id="@+id/fbf_etKeterangan"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:minLines="6"
+				android:lines="8"
+				android:maxLines="10"
+				android:gravity="top"
+				android:inputType="textMultiLine"
+				android:background="#eeeeee"
+				android:hint="{Keterangan}"
+				android:padding="5dp"
+				android:overScrollMode="always"
+				android:scrollbarStyle="insideInset"
+				android:scrollbars="vertical"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="0dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:text="Tanggal Update"
+				android:textColor="@android:color/black"
+				android:textSize="15sp"
+				android:textStyle="normal" />
+
+			<TextView
+				android:id="@+id/fbf_tvtglUpdate"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:hint="{Tanggal Update}"
+				android:gravity="center_vertical"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+			<Button
+				android:id="@+id/fbf_btnRiwayat"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:backgroundTint="@android:color/darker_gray"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="RIWAYAT"
+				android:textAlignment="center"
+				android:textColor="@android:color/white" />
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="2dip">
+
+			<Button
+				android:id="@+id/fbf_btnKembali"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginEnd="5sp"
+				android:layout_weight="2"
+				android:backgroundTint="#FF6D00"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="Kembali"
+				android:textAlignment="center"
+				android:textColor="@android:color/white" />
+
+			<Button
+				android:id="@+id/fbf_btnSimpan"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginEnd="5sp"
+				android:layout_weight="2"
+				android:backgroundTint="@android:color/holo_green_dark"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="Simpan"
+				android:textAlignment="center"
+				android:textColor="@android:color/white" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="2dip">
+
+			<Button
+				android:id="@+id/fbf_btnHapus"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginEnd="5sp"
+				android:layout_weight="1"
+				android:backgroundTint="@android:color/holo_red_dark"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="HAPUS DATA BARANG !"
+				android:textAlignment="center"
+				android:textColor="@android:color/white" />
+
+
+		</LinearLayout>
+	</LinearLayout>
+
+
+</ScrollView>
+

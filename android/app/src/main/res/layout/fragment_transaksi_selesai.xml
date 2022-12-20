@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/input_group"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="50dp"
+		android:layout_marginTop="5dp"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:paddingTop="10dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingStart="10dp"
+			android:paddingTop="10dp"
+			android:layout_marginBottom="10dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:text="Tanggal"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/fts_tvTanggal"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:text="Tanggal Transaksi"
+				android:textColor="@color/black"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingStart="10dp"
+			android:paddingTop="2dp"
+			android:layout_marginBottom="10dp">
+
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:text="Total Harga"
+				android:textColor="@android:color/black"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/fts_tvTotalHarga"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:text="Total Harga"
+				android:textColor="@color/black"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:layout_marginBottom="10dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:text="Bayar Tunai"
+				android:textColor="@android:color/black"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/fts_tvBayarTunai"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:text="Bayar Tunai"
+				android:textColor="@color/black"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:layout_marginBottom="10dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:text="Kembalian"
+				android:textColor="@android:color/black"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/fts_tvKembalian"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:text="Kembalian"
+				android:textColor="@android:color/holo_red_light"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="20sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp"
+			android:layout_marginBottom="10dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:text="Nama Pembeli"
+				android:textColor="@android:color/black"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/fts_tvNamaPembeli"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:text="Nama Pembeli"
+				android:textColor="@color/black"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
+

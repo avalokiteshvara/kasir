@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/holo_blue_dark"
+	tools:context=".MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/holo_blue_dark"
+		android:orientation="vertical">
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:background="@android:color/holo_blue_dark"
+			android:orientation="vertical"
+			android:padding="2dp">
+
+			<EditText
+				android:id="@+id/catatan_etIsi"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+
+				android:background="@android:color/white"
+				android:gravity="top"
+				android:hint="Catatan belanja"
+				android:inputType="textMultiLine"
+
+				android:overScrollMode="always"
+				android:padding="2dp"
+				android:scrollbarStyle="insideInset"
+
+				android:scrollHorizontally="false"
+				android:text=""
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textSize="20sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#fff"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp">
+
+			<Button
+				android:id="@+id/catatan_btnHapus"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginEnd="2sp"
+				android:layout_weight="2"
+				android:backgroundTint="@android:color/holo_red_light"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="HAPUS"
+				android:textAlignment="center"
+				android:textColor="@android:color/white"
+				android:textSize="25sp"
+				tools:ignore="ButtonStyle" />
+
+			<Button
+				android:id="@+id/catatan_btnSimpan"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:backgroundTint="@android:color/holo_green_dark"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="SIMPAN"
+				android:textAlignment="center"
+				android:textColor="@android:color/white"
+				android:textSize="25sp"
+				tools:ignore="ButtonStyle" />
+		</LinearLayout>
+	</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_barang">
+
+    <fragment
+        android:id="@+id/nav_barang"
+        android:name="com.triasfahrudin.kasir.fragment.BarangFragment"
+        android:label="@string/menu_barang"
+        tools:layout="@layout/fragment_barang_list" />
+
+    <fragment
+        android:id="@+id/nav_keranjang"
+        android:name="com.triasfahrudin.kasir.fragment.CartFragment"
+        android:label="@string/menu_keranjang"
+        tools:layout="@layout/fragment_cart_list" />
+
+    <fragment
+        android:id="@+id/nav_hutang"
+        android:name="com.triasfahrudin.kasir.fragment.HutangFragment"
+        android:label="@string/menu_hutang"
+        tools:layout="@layout/fragment_hutang_list" />
+
+	<fragment
+		android:id="@+id/nav_stok"
+		android:name="com.triasfahrudin.kasir.fragment.StokFragment"
+		android:label="@string/stok"
+		tools:layout="@layout/fragment_stok_list" />
+
+	<fragment
+		android:id="@+id/nav_transaksi"
+		android:name="com.triasfahrudin.kasir.fragment.TransactionFragment"
+		android:label="@string/transaksi"
+		tools:layout="@layout/fragment_transaction_list" />
+
+	<fragment
+		android:id="@+id/nav_catatan"
+		android:name="com.triasfahrudin.kasir.fragment.CatatanFragment"
+		android:label="@string/menu_catatan"
+		tools:layout="@layout/fragment_catatan" />
+</navigation>

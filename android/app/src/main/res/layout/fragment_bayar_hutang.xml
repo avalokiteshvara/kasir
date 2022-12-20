@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/holo_blue_dark"
+	tools:context=".MainActivity">
+
+	<LinearLayout
+
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/holo_blue_dark"
+		android:orientation="vertical">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="2dp"
+			android:background="@color/successColor"
+			android:paddingStart="5dp"
+			android:paddingTop="2dp"
+			tools:ignore="RtlSymmetry">
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:text="HARGA TOTAL"
+				android:textColor="@android:color/white"
+				android:textSize="22sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/hutang_tvTotal"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="Rp 0"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textColor="@android:color/white"
+				android:textSize="25sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="2dp"
+			android:background="@color/holo_red_light"
+			android:paddingStart="5dp"
+			android:paddingTop="2dp"
+			tools:ignore="RtlSymmetry">
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:text="KURANG BAYAR"
+				android:textColor="@android:color/white"
+				android:textSize="22sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/hutang_tvKurangBayar"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+				android:text="Rp 0"
+				android:textAppearance="?attr/textAppearanceListItem"
+				android:textColor="@android:color/white"
+				android:textSize="25sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#fff"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:paddingLeft="0dp"
+			android:paddingRight="5dp">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingStart="5dp"
+				android:orientation="horizontal"
+				tools:ignore="RtlSymmetry">
+				<TextView
+					android:layout_weight="1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="25sp"
+					android:text="BAYAR TUNAI"
+					android:textStyle="bold"
+					android:inputType="textPersonName" />
+
+				<EditText
+					android:layout_weight="1"
+					android:id="@+id/hutang_etTunai"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="0"
+					android:inputType="numberSigned"
+					android:textStyle="bold"
+					android:textColor="@android:color/holo_red_light"
+					android:textSize="25sp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingStart="5dp"
+				android:orientation="horizontal"
+				tools:ignore="RtlSymmetry">
+				<TextView
+					android:layout_weight="1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:layout_marginBottom="4dp"
+					android:textSize="25sp"
+					android:text="KEMBALI"
+					android:textStyle="bold"
+					android:inputType="textPersonName" />
+
+				<TextView
+					android:layout_weight="1"
+					android:id="@+id/hutang_tvKembali"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:layout_marginBottom="4dp"
+					android:ems="10"
+					android:text="Rp 0"
+					android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+					android:textStyle="bold"
+					android:textColor="@color/holo_blue_dark"
+					android:textSize="25sp"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/hutang_btnBatal"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginEnd="2sp"
+					android:layout_weight="2"
+					android:backgroundTint="@android:color/holo_red_light"
+					android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+					android:text="BATAL"
+					android:textSize="25sp"
+					android:textAlignment="center"
+					android:textColor="@android:color/white" />
+
+				<Button
+					android:id="@+id/hutang_btnBayar"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:backgroundTint="@android:color/holo_green_dark"
+					android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+					android:text="BAYAR"
+					android:textSize="25sp"
+					android:textAlignment="center"
+					android:textColor="@android:color/white" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

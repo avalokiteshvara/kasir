@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kasir</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_barang">Barang</string>
+    <string name="menu_keranjang">Keranjang</string>
+    <string name="menu_hutang">Hutang</string>
+    <string name="mengirimkan_token">Mengirimkan token</string>
+	<string name="menu_catatan">Catatan</string>
+    <string name="transaksi">Transaksi</string>
+	<string name="stok">Stok</string>
+</resources>
